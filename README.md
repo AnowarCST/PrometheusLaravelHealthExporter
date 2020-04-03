@@ -33,4 +33,4 @@ A Laravel Middleware to export API Status and Performance metrics for Prometheus
 ### Check
 Now check run your server `php artisan serve`
 
-http://localhost:8000
+http://localhost:8000/metrics
