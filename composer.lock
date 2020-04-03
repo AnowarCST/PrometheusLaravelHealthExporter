@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29f572352c33c247cb623442173d37c3",
+    "content-hash": "29a386d39682559fdde4687f214b7559",
     "packages": [
         {
             "name": "endclothing/prometheus_client_php",

@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "AnowarCST\\PrometheusLaravelApiHealth\\": "src/"
+            "AnowarCST\\PrometheusLaravelHealthExporter\\": "src/"
         }
     },
     "extra": {

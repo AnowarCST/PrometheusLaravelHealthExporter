@@ -19,7 +19,7 @@ A Laravel Middleware to export API Status and Performance metrics for Prometheus
 
 
 ### Composer
-> composer require anowarcst/prometheus-laravel-health-exporter
+> composer require anowarcst/prometheus-laravel-health-exporter:dev-master
 
 
 ### Add this middleware in `App\Http\Kernel.php`
