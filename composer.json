@@ -1,0 +1,29 @@
+{
+    "name": "anowarcst/prometheus-laravel-health-exporter",
+    "description": "A Prometheus Exporter for Laravel API Performance Health Monitoring",
+    "keywords": ["prometheus", "laravel", "API", "exporter"],
+    "require": {
+        "endclothing/prometheus_client_php": "^1.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anowar Hossain",
+            "email": "anowar.cst@gmail.com"
+        }
+    ],
+    
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AnowarCST\\PrometheusLaravelApiHealth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AnowarCST\\PrometheusLaravelHealthExporter\\LaravelRequestMonitoringServiceProvider"
+            ]
+        }
+    }
+}
