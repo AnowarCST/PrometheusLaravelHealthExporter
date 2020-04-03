@@ -27,7 +27,7 @@ A Laravel Middleware to export API Status and Performance metrics for Prometheus
 
     protected $middleware = [
         ...
-        \AnowarCST\PrometheusLaravelApiHealth\Middleware\LaravelResponseTimeMiddleware::class,
+        \AnowarCST\PrometheusLaravelApiHealth\Middleware\RequestExporter::class,
     ];
 
 ### Check

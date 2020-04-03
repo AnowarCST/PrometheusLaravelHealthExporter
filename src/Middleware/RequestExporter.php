@@ -3,7 +3,7 @@
 namespace AnowarCST\PrometheusLaravelHealthExporter\Middleware;
 
 
-class ResponseTimeMiddleware extends ResponseTimeHandler
+class RequestExporter extends ResponseTimeHandler
 {
     protected function getRouteNames(): array
     {
