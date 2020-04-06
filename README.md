@@ -1,28 +1,18 @@
 # PrometheusLaravelHealthExporter
 
-A Laravel Middleware to export API Status and Performance metrics for Prometheus. 
-
-## Supported laravel versions
-[![Laravel 5.5.*][icon-l56]][link-laravel]
-[![Laravel 6.*][icon-l60]][link-laravel]
-[![Laravel 7.*][icon-l60]][link-laravel]
-
-### update your `composer.json`
+A Laravel Middleware to export API Health, Status and Performance metrics for Prometheus and Grafana. 
 
 
-    "repositories":[
-        {
-            "type": "vcs",
-            "url": "https://github.com/AnowarCST/PrometheusLaravelHealthExporter.git"
-        }
-    ]
 
+## Install via Composer
+    composer require anowarcst/prometheus-laravel-health-exporter
 
-### Composer
-> composer require anowarcst/prometheus-laravel-health-exporter:dev-master
+#### Vendor publish 
+To publish config file prometheus_exporter.php
 
+    php artisan vendor:publish --provider="AnowarCST\PrometheusLaravelHealthExporter\LaravelRequestMonitoringServiceProvider"
 
-### Add this middleware in `App\Http\Kernel.php`
+#### Add this middleware in `App\Http\Kernel.php`
 
 
     protected $middleware = [
@@ -30,7 +20,24 @@ A Laravel Middleware to export API Status and Performance metrics for Prometheus
         \AnowarCST\PrometheusLaravelApiHealth\Middleware\RequestExporter::class,
     ];
 
-### Check
-Now check run your server `php artisan serve`
+
+#### Preview
+
+    php artisan serve
 
 http://localhost:8000/metrics
+
+## Prometheus
+Update `prometheus.yml`
+
+    scrape_configs:
+        - job_name: 'laravel'
+            static_configs:
+            - targets: ['localhost:8000']
+
+
+
+## Grafana
+
+[Grafana Dashboard](https://grafana.com/grafana/dashboards)
+
