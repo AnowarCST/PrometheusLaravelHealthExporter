@@ -25,7 +25,7 @@ if your Redis host is not the default one, please update Redis host, port in you
 
     protected $middleware = [
         ...
-        \AnowarCST\PrometheusLaravelApiHealth\Middleware\RequestExporter::class,
+        \AnowarCST\PrometheusLaravelHealthExporter\Middleware\RequestExporter::class,
     ];
 
 
