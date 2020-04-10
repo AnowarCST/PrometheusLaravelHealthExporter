@@ -3,7 +3,7 @@
     "description": "A Prometheus Exporter for Laravel API Performance Health Monitoring",
     "keywords": ["prometheus", "laravel", "API", "exporter"],
     "require": {
-        "endclothing/prometheus_client_php": "^1.0"
+        "endclothing/prometheus_client_php": "dev-master"
     },
     "license": "MIT",
     "authors": [
